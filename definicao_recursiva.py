@@ -1,9 +1,11 @@
+# OBS: No geral, além dos termos para n de 1 até 15 pedidos, também mostramos o
+# termo "a0", que seria o equivalente ao n=0 e dá início à recursão.
 def primeiro_slide(n_max):
     f_valores = [3]
     n = 1
     while n <= n_max:
-        calcula = 2*f_valores[n- 1] + 3
-        f_valores.append(calcula)
+        termo = 2*f_valores[n- 1] + 3
+        f_valores.append(termo)
         n += 1
     print(f_valores)
     return f_valores[-1]
@@ -15,8 +17,8 @@ def exponencial(base, expoente):
     f_valores = [1]
     n = 1
     while n <= expoente:
-        calcula = base * f_valores[n - 1]
-        f_valores.append(calcula)
+        termo = base * f_valores[n - 1]
+        f_valores.append(termo)
         n +=1
     print(f_valores)
     return f_valores[-1]
@@ -29,8 +31,8 @@ def fibonacci(n_max):
     f_valores = [1,1]
     n = 2
     while n <= n_max:
-        calcula = f_valores[n - 1] + f_valores[n - 2]
-        f_valores.append(calcula)
+        termo = f_valores[n - 1] + f_valores[n - 2]
+        f_valores.append(termo)
         n += 1
     print(f_valores)
     return f_valores[-1]
@@ -40,14 +42,15 @@ print(f'Resultado Fibonacci: {fibonacci(15)}\n')
 
 def somatorio(n_max):
     soma = 1
-    # Colocamos soma=1 (diferente de soma=0 do slide), pois a ideia dessa função
-    # parece ser a soma dos números ímpares. Assim começa em 1, não em 3. Se
-    # esse não for o caso, favor desconsiderar. O mesmo vale para o produtório.
+    # Colocamos soma=1 (diferente de soma=0 do slide), pois a ideia para essa
+    # função parece ser a de apresentar a soma dos n primeiros números ímpares.
+    # Assim começa em 1, não em 3. Se esse não for o caso, favor desconsiderar.
+    # O mesmo vale para o produtório.
     n = 1
     f_valores = [1]
     while n <= n_max:
-        calcula = 2 * n + 1
-        soma += calcula
+        termo = 2 * n + 1
+        soma += termo
         f_valores.append(soma)
         n += 1
     print(f_valores)
@@ -60,8 +63,8 @@ def produtorio(n_max):
     n = 1
     f_valores = [1]
     while n <= n_max:
-        calcula = 2 * n + 1
-        produto *= calcula
+        termo = 2 * n + 1
+        produto *= termo
         f_valores.append(produto)
         n += 1
     print(f_valores)
