@@ -1,5 +1,14 @@
+'''
+Grupo:
+Daniel Maffezzoli
+Ewerton Peixoto de Alencar Arrais
+Gabriel Mathias do Carmo Sica
+Luiz Fabiano Merino
+Miguel Veiga Gonçalves
+'''
+
 # OBS: No geral, além dos termos para n de 1 até 15 pedidos, também mostramos o
-# termo "a0", que seria o equivalente ao n=0 e dá início à recursão.
+# termo "a0", que seria o equivalente ao n=0 que dá início à recursão.
 def primeiro_slide(n_max):
     f_valores = [3]
     n = 1
